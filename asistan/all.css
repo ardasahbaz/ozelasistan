@@ -1,0 +1,86 @@
+
+
+
+
+.card-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+   text-decoration: underline;
+    
+}
+
+
+.dropdown-toggle::after {
+    display: none;;
+}
+
+
+.task {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+    
+
+
+.task label.checked {
+    background-color: rgb(29, 210, 62);
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+.card-header .container-1 button {
+    float: right;
+    border: none;
+}
+
+.card-header .container-2 button {
+    float: right;
+    border: none;
+}
+
+.card-header .container-3 button {
+    float: right;
+    border: none;
+}
+
+.card-header .container-4 button {
+    float: right;
+    border: none;
+}
+
+.card-header .container-5 button {
+    float: right;
+    border: none;
+}
+
+
+
+footer {
+   position: relative;
+   top: 270px;
+   
+}
+
+
+
+footer .fa-brands {
+    color: black;
+    
+}
+
+
+footer .u-btn {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+
+
