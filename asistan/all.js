@@ -119,6 +119,7 @@ function newTask(event) {
         gorevListesi.push({"id": gorevListesi.length + 1, "gorevAdi": taskInput.value});
         taskInput.value = "";
         displayTasks();
+        showAlert('Görev Ekleme İşlemi Uyguladınız.', 'success');
     }
 
     event.preventDefault();
@@ -141,7 +142,7 @@ function deleteTask(id) {
     for(let index in gorevListesi) {
         if(gorevListesi[index].id == id) {
             deletedId = index;
-        
+            showAlert('Görevi Silme İşlemi Uyguladınız.', 'danger');
         }
     }
     
@@ -204,18 +205,27 @@ function updateStatus(selectedTask) {
 
 
 
-// lose olması için süre vermek //
+function showAlert(message, className){
+        
+    var alert = `
+
+    <div class="alert alert-${className}">
+    ${message}
+    </div>
+    
+    `
+    let cardspecial = document.querySelector(".cardspecial");
+
+    cardspecial.insertAdjacentHTML("beforebegin",alert);
+
+    setTimeout(function(){
+
+        document.querySelector(".alert").remove();
+
+    },3000)
 
 
-// let x = document.querySelector(".input123");
-
-
-
- // let timeoff = new Date() - x.value;
-
-
-
-// document.querySelector("#btnAddNewTask1").addEventListener("click", function(){
+}
     
     
 
